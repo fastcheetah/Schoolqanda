@@ -44,19 +44,8 @@ ul {
     list-style: none;
 }
 
-.btn {
-    display: inline-block;
-    background-color: var(--primary-blue);
-    color: var(--white);
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-}
 
-.btn:hover {
-    background-color: var(--secondary-blue);
-}
+
 
 /* Header Styles */
 header {
