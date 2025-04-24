@@ -10,6 +10,7 @@
     --white: #ffffff;
     --darkgray: #1E1E1E;
     --maincolor: #141619;
+    --contentcolor : #1B1E2A;
 }
 
 * {
@@ -49,7 +50,7 @@ ul {
 
 /* Header Styles */
 header {
-    background-color: var(--maincolor);
+    background-color: var(--contentcolor);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -95,7 +96,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: var(--primary-blue);
+    background-color: var(--maincolor);
     color: var(--white);
     padding: 80px 0;
     /* text-align: center; */
@@ -117,6 +118,13 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 700;
+    color: var(--white);
+}
+.hero h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--white);
 }
 
 .hero p {
@@ -140,14 +148,19 @@ nav ul li a:hover {
 /* Subjects Section */
 .subjects {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--contentcolor);
 }
 
 .subjects h2 {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 50px;
     font-size: 2rem;
-    color: var(--primary-black);
+    color: var(--white);
+}
+.subjects h3{
+    color: var(--white);
+    font-size: 1.5rem;
+
 }
 
 .subjects-grid {
