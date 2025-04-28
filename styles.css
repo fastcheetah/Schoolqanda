@@ -168,7 +168,7 @@ nav ul li a:hover {
 
 .subjects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
     gap: 30px;
 }
 .subject-a{
@@ -328,9 +328,7 @@ footer {
         font-size: 2rem;
     }
     
-    .subjects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
+ 
 }
 
 @media (max-width: 480px) {
