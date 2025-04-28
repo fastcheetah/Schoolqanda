@@ -151,7 +151,7 @@ nav ul li a:hover {
 /* Subjects Section */
 .subjects {
     padding: 80px 0;
-    background-color: var(--contentcolor);
+    background-color: var(--maincolor);
 }
 
 .subjects h2 {
