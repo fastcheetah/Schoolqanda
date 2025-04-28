@@ -144,6 +144,9 @@ nav ul li a:hover {
 .hero .btn:hover {
     background-color: var(--secondary-yellow);
 }
+.term{
+    margin-bottom:20px;
+}
 
 /* Subjects Section */
 .subjects {
@@ -165,24 +168,27 @@ nav ul li a:hover {
 
 .subjects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 30px;
 }
-
-.subject-card {
+.subject-a{
     background-color: var(--primary-yellow);
     border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    box-shadow: 0 10px 25px var(--darkgray);
     display: flex;
     flex-direction: column;
     height: 100%;
 }
+/* .subject-card {
+
+} */
 
 .subject-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 25px var(--darkgray);
 }
 
 .subject-icon {
