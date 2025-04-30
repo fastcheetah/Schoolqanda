@@ -3,7 +3,6 @@
 A study support platform designed to help students in my school community improve their academic performance by organizing topic-based questions and answers across various subjects.
 
 ---
-
 ## ✨ Project Purpose
 
 This project aims to:
