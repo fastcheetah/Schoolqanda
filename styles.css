@@ -60,10 +60,17 @@ header {
     width: 70%;
     height: 75%;
 }
-hr{
+/* hr{
     border: 0.1px solid var(--white);
+    position: sticky;
+    z-index: 0;
+} */
+.hr{
+    border: 0.1px solid var(--white);
+    position: sticky;
+    z-index: 120;
+    top: 0;
 }
-
 
 header .container {
     display: flex;
