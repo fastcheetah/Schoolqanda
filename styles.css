@@ -148,17 +148,17 @@ nav ul li a:hover {
 /* Subjects Section */
 .subjects {
     padding: 80px 0;
-    background-color: var(--maincolor);
+    background-color: var(--contentcolor);
 }
 
 .subjects h2 {
     /* text-align: center; */
     margin-bottom: 50px;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--white); 
 }
 .subjects h3{
-    color: var(--primary-black);
+    /* color: var(--primary-black); */
     font-size: 1.5rem;
 }
 
@@ -193,11 +193,15 @@ nav ul li a:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px var(--darkgray);
 }
+.subject-card:hover img{
+    color: white;
+}
 
 .subject-card:hover .subject-a {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px var(--darkgray);
 }
+
 
 .subject-icon {
     font-size: 2.5rem;
