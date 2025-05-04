@@ -299,6 +299,31 @@ footer {
     color: var(--primary-blue);
 }
 
+/* Theme-dependent logo styles */
+.theme-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-logo img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.light-logo {
+    display: none;
+}
+
+[data-theme="light"] .dark-logo {
+    display: none;
+}
+
+[data-theme="light"] .light-logo {
+    display: block;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
