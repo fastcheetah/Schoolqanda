@@ -192,7 +192,7 @@ nav ul li a:hover {
 [data-theme="dark"] .subject-a {
     background-color: var(--subject-bg);
     border-radius: 8px;
-    padding: 30px;
+    padding: 25px 20px;
     box-shadow: 0 10px 25px var(--subject-shadow);
     display: block;
     height: 100%;
@@ -479,6 +479,7 @@ footer {
 .toggle-text {
     font-size: 14px;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
