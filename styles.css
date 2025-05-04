@@ -19,6 +19,11 @@
     --header-bg: var(--contentcolor);
     --footer-bg: var(--secondary-black);
     --toggle-bg: #333;
+    --subject-bg: var(--primary-yellow);
+    --subject-text: var(--primary-black);
+    --subject-shadow: var(--darkgray);
+    --subject-hover-shadow: var(--darkgray);
+    --arrow-color: var(--primary-black);
 }
 
 /* Light theme variables */
@@ -29,6 +34,11 @@
     --header-bg: #ffffff;
     --footer-bg: #e0e0e0;
     --toggle-bg: #f0f0f0;
+    --subject-bg: #f0f5ff;
+    --subject-text: #333333;
+    --subject-shadow: rgba(0, 0, 0, 0.05);
+    --subject-hover-shadow: rgba(0, 0, 0, 0.1);
+    --arrow-color: #1a73e8;
 }
 
 * {
@@ -172,43 +182,93 @@ nav ul li a:hover {
 }
 
 .subjects-grid {
-    display: grid;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 900px;
 }
 
-.subject-a{
-    background-color: var(--primary-yellow);
+/* Dark mode subject styles */
+[data-theme="dark"] .subject-a {
+    background-color: var(--subject-bg);
     border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 10px 25px var(--darkgray);
+    box-shadow: 0 10px 25px var(--subject-shadow);
     display: block;
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.subject-content {
+[data-theme="dark"] .subject-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.more-than-icon {
+[data-theme="dark"] .arrow-icon {
+    display: none;
+}
+
+[data-theme="dark"] .more-than-icon {
     width: 24px;
     height: 24px;
+    display: block;
 }
 
-.subject-card:hover {
+[data-theme="dark"] .subject-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 25px var(--darkgray);
+    box-shadow: 0 20px 25px var(--subject-hover-shadow);
 }
 
-.subject-card:hover img{
-    color: white;
-}
-
-.subject-card:hover .subject-a {
+[data-theme="dark"] .subject-card:hover .subject-a {
     transform: translateY(-5px);
-    box-shadow: 0 20px 25px var(--darkgray);
+    box-shadow: 0 20px 25px var(--subject-hover-shadow);
+}
+
+/* Light mode subject styles - SaveMyExams style */
+[data-theme="light"] .subject-a {
+    background-color: var(--subject-bg);
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 5px var(--subject-shadow);
+    display: block;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .subject-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[data-theme="light"] .subject-card h3 {
+    color: var(--subject-text);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+[data-theme="light"] .more-than-icon {
+    display: none;
+}
+
+[data-theme="light"] .arrow-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--arrow-color);
+    display: block;
+}
+
+[data-theme="light"] .subject-card:hover .subject-a {
+    background-color: #e8f0fe;
+    transform: none;
+    box-shadow: 0 2px 5px var(--subject-shadow);
+}
+
+[data-theme="light"] .subject-card:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 .subject-icon {
@@ -219,7 +279,7 @@ nav ul li a:hover {
 .subject-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0;
-    color: var(--primary-black);
+    color: var(--subject-text);
 }
 
 .subject-card p {
