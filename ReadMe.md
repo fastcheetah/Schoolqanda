@@ -64,3 +64,7 @@ Building after exams
 
 > _"Helping students succeed—one question at a time."_ 💙
 Need to find content and questions for the page
+Next features :
+Content to put in the navbar
+Whether to change the display of the subjects
+Structure of the subject pages
