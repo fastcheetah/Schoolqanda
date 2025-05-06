@@ -68,3 +68,4 @@ Next features :
 Content to put in the navbar
 Whether to change the display of the subjects
 Structure of the subject pages
+Change color of the subject containers
