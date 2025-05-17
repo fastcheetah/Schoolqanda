@@ -1,0 +1,30 @@
+:root {
+    --primary-blue: #1a73e8;
+    --secondary-blue: #0d47a1;
+    --primary-yellow: #ffd54f;
+    --secondary-yellow: #ffb300;
+    --primary-black: #212121;
+    --secondary-black: #121212;
+    --light-gray: #f5f5f5;
+    --white: #ffffff;
+    --darkgray: #1E1E1E;
+    --maincolor: #141619;
+    --contentcolor : #1B1E2A;
+}
+.highlight{
+    font-size: 23px;
+    font-weight: bolder;
+}
+.term{
+    color: white;
+}
+.hero{
+    padding-bottom: 20px;
+}
+.subjects{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.subjects h2{
+    margin-bottom: 20px;
+}
