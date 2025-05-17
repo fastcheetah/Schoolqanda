@@ -67,8 +67,8 @@ Building after exams
 Need to find content and questions for the page
 Next features :
 Content to put in the navbar
-Whether to change the display of the subjects
-Structure of the subject pages
-Change color of the subject containers
+Whether to change the display of the subjects(Done)
+Structure of the subject pages(Done)
+Change color of the subject containers(Done)
 Making an image for the page with figma(Learning how to use figma draw lol)
 Work on the header of the page
