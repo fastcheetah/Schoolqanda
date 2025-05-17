@@ -71,3 +71,4 @@ Whether to change the display of the subjects
 Structure of the subject pages
 Change color of the subject containers
 Making an image for the page with figma(Learning how to use figma draw lol)
+Work on the header of the page
