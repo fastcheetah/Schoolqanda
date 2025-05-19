@@ -913,7 +913,7 @@ footer {
  gap: 10px;
 }
 .container{
- /* width: 100%; */
+ width: 100%;
 }
 .footer-content{
     grid-template-columns: none;
