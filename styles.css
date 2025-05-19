@@ -119,10 +119,14 @@ header {
 }
 
 .mobile-header .container {
+    padding: 15px 20px;
+}
+
+.mobile-header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    flex-wrap: wrap;
 }
 
 .mobile-actions {
@@ -844,7 +848,7 @@ footer {
     }
     
     .mobile-actions {
-        gap: 10px;
+        gap: 50px;
     }
     
     .hero {
@@ -861,5 +865,39 @@ footer {
 
     .subjects h2 {
         font-size: 1.8rem;
+    }
+}
+
+/* For screens below 370px - Logo takes full width and actions move to next line */
+@media (max-width: 370px) {
+    .mobile-header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .mobile-header .logo {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+    .mobile-header .logo-image {
+        width: 180px; /* Slightly larger logo when it's centered */
+    }
+    
+    .mobile-actions {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Adjust padding for better spacing */
+    .mobile-header .container {
+        padding: 12px 15px;
+    }
+    
+    /* Ensure the mobile menu toggle is properly aligned */
+    .mobile-menu-toggle {
+        padding: 5px;
     }
 }
