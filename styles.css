@@ -959,3 +959,22 @@ footer {
         padding: 5px;
     }
 }
+/*Text change of the ICT */
+.full-text {
+  display: inline;
+}
+
+.short-text {
+  display: none;
+}
+
+/* Media query to switch text display below 560px */
+@media (max-width: 560px) {
+  .full-text {
+    display: none;
+  }
+
+  .short-text {
+    display: inline;
+  }
+}
