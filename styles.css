@@ -907,3 +907,15 @@ footer {
  gap: 10px;
 }
 }
+/* For screens below 300px - Logo takes full width and actions move to next line */
+@media (max-width: 300px) {
+.mobile-actions{
+ gap: 10px;
+}
+.container{
+ /* width: 100%; */
+}
+.footer-content{
+    grid-template-columns: none;
+}
+}
