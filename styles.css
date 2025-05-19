@@ -901,3 +901,9 @@ footer {
         padding: 5px;
     }
 }
+/* For screens below 354px - Logo takes full width and actions move to next line */
+@media (max-width: 354px) {
+.mobile-actions{
+ gap: 10px;
+}
+}
