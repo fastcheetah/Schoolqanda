@@ -74,3 +74,4 @@ Making an image for the page with figma(Learning how to use figma draw lol)
 Work on the header of the page(Done but will still come back to it)
 Still needs to touch this header because on phones the orientation is bad 
 Work on header on small devices
+Build layout of subject pages
