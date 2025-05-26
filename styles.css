@@ -532,7 +532,8 @@ nav ul li a:hover {
 
 .subject-search-input:focus {
     outline: none;
-    background-color: #232b4d;
+    /* background-color: #232b4d; */
+    border: 0.5px solid var(--primary-blue);
 }
 
 [data-theme="light"] .subject-search-input:focus {
