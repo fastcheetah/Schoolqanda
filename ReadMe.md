@@ -72,8 +72,8 @@ Structure of the subject pages(Done)
 Change color of the subject containers(Done)
 Making an image for the page with figma(Learning how to use figma draw lol)
 Work on the header of the page(Done but will still come back to it)
-Still needs to touch this header because on phones the orientation is bad 
-Work on header on small devices
+Still needs to touch this header because on phones the orientation is bad(Done but needs more touch) 
+Work on header on small devices(Done aspects but need more touch)
 Build layout of subject pages
 Building the subject pages 
-adding the physics and fmaths page
+adding the physics and fmaths page(Done)
