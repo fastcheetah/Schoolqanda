@@ -70,7 +70,7 @@ Content to put in the navbar
 Whether to change the display of the subjects(Done)
 Structure of the subject pages(Done)
 Change color of the subject containers(Done)
-Making an image for the page with figma(Learning how to use figma draw lol)
+Making an image for the page with figma(Learning how to use figma draw lol still in work)
 Work on the header of the page(Done but will still come back to it)
 Still needs to touch this header because on phones the orientation is bad(Done but needs more touch) 
 Work on header on small devices(Done aspects but need more touch)
