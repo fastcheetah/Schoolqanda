@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam Success Path</title>
+    <title>Exam Success Path - English</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,27 +52,29 @@
         <!-- Mobile Header (displays below 1020px) -->
         <div class="mobile-header">
             <div class="container">
-                <div class="logo">
-                    <a href="index.html" class="logo-link">
-                        <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
-                        <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
-                    </a>
-                </div>
-                
-                <div class="mobile-actions">
-                    <div class="search-icon-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                        </svg>
+                <div class="mobile-header-wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
                     </div>
                     
-                    <a href="#" class="try-free-btn">Try 7 days free</a>
-                    
-                    <button class="mobile-menu-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                        </svg>
-                    </button>
+                    <div class="mobile-actions">
+                        <div class="search-icon-container">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                        </div>
+                        
+                        <a href="#" class="try-free-btn">Try 7 days free</a>
+                        
+                        <button class="mobile-menu-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,15 +124,13 @@
     </header>
 
     <section class="hero">
-          <div class="container">
-            <!-- <div class="grade-label">11th Grade</div> -->
+        <div class="container">
             <h2>English</h2>
-            <p class="description"> <span class="highlight">Not sure what to revise for English? </span>This platform helps you focus by offering clear revision notes, past exam questions, and fully explained model answers tailored to your curriculum.  Whether you're preparing for exams or trying to improve your expression, you'll learn from qualified work and practical examples that make studying more focused and less stressful. </p>
-           
-            
+            <p class="description"> <span class="highlight">Not sure what to revise for English? </span>This platform helps you focus by offering clear revision notes, past exam questions, and fully explained model answers tailored to your curriculum. Whether you're preparing for exams or trying to improve your expression, you'll learn from qualified work and practical examples that make studying more focused and less stressful. </p>
         </div>
     </section>
-     <section class="resources-section">
+
+    <section class="resources-section">
         <div class="container">
             <h2 class="resources-title">AQA Resources</h2>
             
@@ -212,7 +212,7 @@
             <!-- Course Overview Link -->
             <div class="course-overview-container">
                 <a href="#" class="course-overview-link">
-                    <span>AQA A Level Chemistry - Course Overview</span>
+                    <span>AQA A Level English - Course Overview</span>
                     <div class="course-overview-arrow">
                         <!-- Arrow icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
@@ -224,102 +224,11 @@
         </div>
     </section>
 
-    <!-- Theme Toggle Button (optional) -->
-    <div style="position: fixed; bottom: 20px; right: 20px;">
-        <button onclick="toggleTheme()" style="background: #333; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer;">
-            Toggle Theme
-        </button>
-    </div>
-
-    <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-        }
-    </script>
-
-    <!-- <section id="subjects" class="subjects">
-        <div class="container">
-            <h2>11th Grade</h2>
-            
-            <div class="subjects-grid">
-                <div class="subject-card">
-                    <a href="english.html" class="subject-a">
-                        <div class="subject-content">
-                            <h3>English</h3>
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                            </svg>
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/More%20Than%20%282%29-2oz2rg3VGXVsj4SK33onp0a24C1273.png" alt="More than" class="more-than-icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a">
-                        <div class="subject-content">
-                            <h3>Biology</h3>
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                            </svg>
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/More%20Than%20%282%29-2oz2rg3VGXVsj4SK33onp0a24C1273.png" alt="More than" class="more-than-icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a">
-                        <div class="subject-content">
-                            <h3>Economics</h3>
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                            </svg>
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/More%20Than%20%282%29-2oz2rg3VGXVsj4SK33onp0a24C1273.png" alt="More than" class="more-than-icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a">
-                        <div class="subject-content">
-                            <h3>Civic Education</h3>
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                            </svg>
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/More%20Than%20%282%29-2oz2rg3VGXVsj4SK33onp0a24C1273.png" alt="More than" class="more-than-icon">
-                        </div>
-                    </a>
-                </div>
-               
-                <div class="subject-card">
-                    <a href="#" class="subject-a">
-                        <div class="subject-content">
-                            <h3>Marketing</h3>
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                            </svg>
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/More%20Than%20%282%29-2oz2rg3VGXVsj4SK33onp0a24C1273.png" alt="More than" class="more-than-icon">
-                        </div>
-                    </a> 
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a">
-                        <div class="subject-content">
-                            <h3>Information Communication Technology</h3>
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                            </svg>
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/More%20Than%20%282%29-2oz2rg3VGXVsj4SK33onp0a24C1273.png" alt="More than" class="more-than-icon">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Exam Sucess Path</h3>
+                    <h3>Exam Success Path</h3>
                     <p>Your ultimate resource for 11th grade academic support and knowledge sharing.</p>
                 </div>
                 <div class="footer-section">
