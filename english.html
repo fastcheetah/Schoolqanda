@@ -130,6 +130,114 @@
             
         </div>
     </section>
+     <section class="resources-section">
+        <div class="container">
+            <h2 class="resources-title">AQA Resources</h2>
+            
+            <div class="resources-grid">
+                <!-- Revision Notes Card -->
+                <div class="resource-card">
+                    <a href="#" class="resource-link">
+                        <div class="resource-content">
+                            <div class="resource-icon">
+                                <!-- Book/Document icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="resource-title">Revision Notes</h3>
+                            <div class="resource-arrow">
+                                <!-- Arrow icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Exam Questions Card -->
+                <div class="resource-card">
+                    <a href="#" class="resource-link">
+                        <div class="resource-content">
+                            <div class="resource-icon">
+                                <!-- Question mark icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                            </div>
+                            <h3 class="resource-title">Exam Questions</h3>
+                            <div class="resource-arrow">
+                                <!-- Arrow icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Past Papers Card -->
+                <div class="resource-card">
+                    <a href="#" class="resource-link">
+                        <div class="resource-content">
+                            <div class="resource-icon">
+                                <!-- Clock icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="resource-title">Past Papers</h3>
+                            <div class="resource-arrow">
+                                <!-- Arrow icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Course Overview Link -->
+            <div class="course-overview-container">
+                <a href="#" class="course-overview-link">
+                    <span>AQA A Level Chemistry - Course Overview</span>
+                    <div class="course-overview-arrow">
+                        <!-- Arrow icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Button (optional) -->
+    <div style="position: fixed; bottom: 20px; right: 20px;">
+        <button onclick="toggleTheme()" style="background: #333; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer;">
+            Toggle Theme
+        </button>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+        }
+    </script>
 
     <!-- <section id="subjects" class="subjects">
         <div class="container">
