@@ -25,6 +25,7 @@
     --subject-shadow: var(--darkgray);
     --subject-hover-shadow: var(--darkgray);
     --arrow-color: var(--primary-black);
+    --savemyexams-dark-blue: #f0f5ff;
 }
   
 /* Light theme variables */
