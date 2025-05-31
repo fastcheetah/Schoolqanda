@@ -78,4 +78,29 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   }
+
+  // Dropdown functionality
+  const dropdownHeaders = document.querySelectorAll(".dropdown-header")
+  
+  dropdownHeaders.forEach((header) => {
+    header.addEventListener("click", () => {
+      const dropdownSection = header.parentElement
+      const isActive = dropdownSection.classList.contains("active")
+      
+      // Close all other dropdowns first
+      dropdownHeaders.forEach((otherHeader) => {
+        const otherSection = otherHeader.parentElement
+        if (otherSection !== dropdownSection) {
+          otherSection.classList.remove("active")
+        }
+      })
+      
+      // Toggle current dropdown
+      if (isActive) {
+        dropdownSection.classList.remove("active")
+      } else {
+        dropdownSection.classList.add("active")
+      }
+    })
+  })
 })
