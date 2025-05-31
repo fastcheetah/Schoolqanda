@@ -1,158 +1,428 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biology</title>
+    <title>Exam Success Path - English</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="englishstyles.css">
-    <link rel="shortcut icon" href="./img/Vector.png" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="./img/Logo.png" alt="" class="a-title" width="185" height="40"></a>
+        <!-- Desktop Header (displays above 1020px) -->
+        <div class="desktop-header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="nav-dropdown">Start studying <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                            <li><a href="#" class="nav-dropdown">Study tools <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="header-search">
+                    <input type="text" placeholder="Search for a subject" class="search-input">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
+                
+                <div class="header-right">
+                    <a href="#" class="login-btn">Log in</a>
+                    <a href="#" class="signup-btn">Sign up</a>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Subjects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
         </div>
+        
+        <!-- Mobile Header (displays below 1020px) -->
+        <div class="mobile-header">
+            <div class="container">
+                <div class="mobile-header-wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-actions">
+                        <div class="search-icon-container">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                        </div>
+                        
+                        <a href="#" class="try-free-btn">Try 7 days free</a>
+                        
+                        <button class="mobile-menu-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-header">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
+                    </div>
+                    <button class="close-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="#" class="nav-dropdown">Start studying <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                        <li><a href="#" class="nav-dropdown">Study tools <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-actions">
+                    <a href="#" class="login-btn">Log in</a>
+                    <a href="#" class="signup-btn">Sign up</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile search overlay -->
+        <div class="mobile-search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for a subject" class="search-input">
+                <button class="close-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hr"></div>
     </header>
-    <hr>
 
     <section class="hero">
         <div class="container">
-            <!-- <div class="grade-label">11th Grade</div> -->
             <h2>English</h2>
-            <p class="description"> <span class="highlight">Not sure what to revise for Biology? </span>This platform helps you focus by offering clear revision notes, past exam questions, and fully explained model answers tailored to your curriculum.  Whether you're preparing for exams or trying to improve your expression, you'll learn from qualified work and practical examples that make studying more focused and less stressful. </p>
-           
-            
+            <p class="description"> <span class="highlight">Not sure what to revise for English? </span>This platform helps you focus by offering clear revision notes, past exam questions, and fully explained model answers tailored to your curriculum. Whether you're preparing for exams or trying to improve your expression, you'll learn from qualified work and practical examples that make studying more focused and less stressful. </p>
         </div>
     </section>
 
-    <section id="subjects" class="subjects">
+    <section class="resources-section">
         <div class="container">
-            <h2>11th Grade</h2>
-            
-            <h3 class="term">First Term</h3>
-            <div class="subjects-grid">
-                <div class="subject-card">
-                    <a href="english.html" class="subject-a"><h3>English</h3>
-                    </a>
-                    
+            <!-- Dropdown Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" id="dropdownHeader">
+                    <h2 class="dropdown-title"> First Term Resources</h2>
+                    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z"/>
+                    </svg>
                 </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Biology</h3></a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Economics</h3></a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Civic Education</h3></a>
-                </div>
-               
-                <div class="subject-card">
-                   <a href="#" class="subject-a"><h3>Marketing</h3>  </a> 
-                </div>
-                <div class="subject-card">
-                    
-                    <a href="#" class="subject-a"><h3>Information Communication Technology</h3></a>
-                    
+                
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="dropdown-resources">
+                        <div class="resources-grid">
+                            <!-- Revision Notes Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Revision Notes</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Exam Questions Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Exam Questions</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Past Papers Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Past Papers</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="course-overview-container">
+                <a href="#" class="course-overview-link">
+                    <span>AQA A Level English - Course Overview</span>
+                    <div class="course-overview-arrow">
+                        <!-- Arrow icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="subjects" class="subjects">
-        <div class="container">
-            
-            
-            <h3 class="term">Second Term</h3>
-            <div class="subjects-grid">
-                <div class="subject-card">
-                    <a href="english.html" class="subject-a"><h3>English</h3>
-                    </a>
-                    
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Biology</h3></a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Economics</h3></a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Civic Education</h3></a>
-                </div>
-               
-                <div class="subject-card">
-                   <a href="#" class="subject-a"><h3>Marketing</h3>  </a> 
-                </div>
-                <div class="subject-card">
-                    
-                    <a href="#" class="subject-a"><h3>Information Communication Technology</h3></a>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="subjects" class="subjects">
-        <div class="container">
-        
-            
-            <h3 class="term">Third Term</h3>
-            <div class="subjects-grid">
-                <div class="subject-card">
-                    <a href="english.html" class="subject-a"><h3>English</h3>
-                    </a>
-                    
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Biology</h3></a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Economics</h3></a>
-                </div>
-                <div class="subject-card">
-                    <a href="#" class="subject-a"><h3>Civic Education</h3></a>
-                </div>
-               
-                <div class="subject-card">
-                   <a href="#" class="subject-a"><h3>Marketing</h3>  </a> 
-                </div>
-                <div class="subject-card">
-                    
-                    <a href="#" class="subject-a"><h3>Information Communication Technology</h3></a>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- <section class="cta">
-        <div class="container">
-            <h2>Ready to Start Learning?</h2>
-            <p>Join our community of students and teachers to enhance your learning experience.</p>
-            <a href="#" class="btn">Sign Up Now</a>
-        </div>
-    </section> -->
+            <!-- Second Dropdown Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" id="dropdownHeader2">
+                    <h2 class="dropdown-title">Second Term Resources</h2>
+                    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z"/>
+                    </svg>
+                </div>
+                
+                <div class="dropdown-content" id="dropdownContent2">
+                    <div class="dropdown-resources">
+                        <div class="resources-grid">
+                            <!-- Revision Notes Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Revision Notes</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Exam Questions Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Exam Questions</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Past Papers Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Past Papers</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="course-overview-container">
+                <a href="#" class="course-overview-link">
+                    <span>AQA A Level English - Course Overview</span>
+                    <div class="course-overview-arrow">
+                        <!-- Arrow icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Dropdown Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header" id="dropdownHeader3">
+                    <h2 class="dropdown-title">Third Term Resources</h2>
+                    <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z"/>
+                    </svg>
+                </div>
+                
+                <div class="dropdown-content" id="dropdownContent3">
+                    <div class="dropdown-resources">
+                        <div class="resources-grid">
+                            <!-- Revision Notes Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Revision Notes</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Exam Questions Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Exam Questions</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!-- Past Papers Card -->
+                            <div class="resource-card">
+                                <a href="#" class="resource-link">
+                                    <div class="resource-content">
+                                        <div class="resource-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                        </div>
+                                        <h3 class="resource-title">Past Papers</h3>
+                                        <div class="resource-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="course-overview-container">
+                <a href="#" class="course-overview-link">
+                    <span>AQA A Level English - Course Overview</span>
+                    <div class="course-overview-arrow">
+                        <!-- Arrow icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       
+        </div> 
+    </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Exam Sucess Path</h3>
+                    <h3>Exam Success Path</h3>
                     <p>Your ultimate resource for 11th grade academic support and knowledge sharing.</p>
                 </div>
                 <div class="footer-section">
@@ -165,7 +435,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <img src="./img/Vector.png" alt="">
+                <!-- Theme-dependent logo -->
+                <div class="theme-logo">
+                    <img src="./img/Vector.png" alt="Logo" class="dark-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%20%282%29-5imb2UisVJpvVhQm8ZBeJLNFBI6l2U.png" alt="Logo" class="light-logo">
+                </div>
                 <div class="footer-section">
                     <h3>Contact Us</h3>
                     <p>Email: info@schoolqa.edu</p>
@@ -177,6 +451,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle">
+            <div class="toggle-icon light-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                    <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+                </svg>
+            </div>
+            <div class="toggle-icon dark-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                    <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+                </svg>
+            </div>
+            <span class="toggle-text"></span>
+        </button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
