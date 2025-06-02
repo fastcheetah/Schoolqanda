@@ -81,3 +81,7 @@ adding the physics and fmaths page(Done)
 Taking a break from this project for a while to clear my mind and hopefully in that period think of more features to add 
 
 4th July - Resume date
+
+I want to use this area for documenting and blogging sometimes 
+Just to let people know how I felt even while building a project like this 
+I dont even know why I do this no one might read this so much things  what if it is a big flop all things that secretly talk in my heart but to be honest Im not scared at all just normal life is a mess even tryna work on myself so I can put more time into this and school
