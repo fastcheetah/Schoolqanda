@@ -77,3 +77,5 @@ Work on header on small devices(Done aspects but need more touch)
 Build layout of subject pages
 Building the subject pages 
 adding the physics and fmaths page(Done)
+
+Taking a break from this project for a while to clear my mind and hopefully in that period think of more features to add 
