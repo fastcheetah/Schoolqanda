@@ -89,3 +89,5 @@ I dont even know why I do this no one might read this so much things  what if it
 Procastination at its finest lol couldnt even make blogs. Ill try working on planning  my dats and weeks for 
 productivity and success. Thank you I want to make this shit
 My WiFi has finished so I have to watch the way I code because my hotspot cant really handle it 
+
+Resuming today with small features 
