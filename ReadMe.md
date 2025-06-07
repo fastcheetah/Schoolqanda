@@ -94,3 +94,4 @@ My WiFi has finished so I have to watch the way I code because my hotspot cant r
 WiFi Finished
 Resuming today with small features 
 Got tests 
+Replanning the project
