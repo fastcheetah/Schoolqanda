@@ -94,3 +94,6 @@ My WiFi has finished so I have to watch the way I code because my hotspot cant r
 WiFi Finished
 Resuming today with small features 
 Got tests 
+Been busy studying for tests and wrote an essay for a competitions
+This is the link for the essay
+https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
