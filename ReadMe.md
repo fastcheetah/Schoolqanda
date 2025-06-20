@@ -92,8 +92,7 @@ productivity and success. Thank you I want to make this shit
 My WiFi has finished so I have to watch the way I code because my hotspot cant really handle it 
 
 WiFi Finished
-Resuming today with small features 
-Got tests 
+
 Been reading for tests coming up soon
 Wrote an essay by the way Ill drop the link
 https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
