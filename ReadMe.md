@@ -66,7 +66,7 @@ Building after exams
 
 > _"Helping students succeed—one question at a time."_ 💙
 Need to find content and questions for the page
-Next features :
+<!-- Next features :
 Content to put in the navbar
 Whether to change the display of the subjects(Done)
 Structure of the subject pages(Done)
@@ -97,4 +97,4 @@ Been reading for tests coming up soon
 Wrote an essay by the way Ill drop the link
 https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
 Replanning the project
-I think I want to still work on the way the user gets to what he needs and will shift content I took a break from this project but Im back officially
+I think I want to still work on the way the user gets to what he needs and will shift content I took a break from this project but Im back officially -->
