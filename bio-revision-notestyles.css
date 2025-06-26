@@ -110,12 +110,19 @@
   padding: 60px 0;
 }
 
-.revision-grid {
+/* .revision-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   max-width: 1400px;
   margin: 0 auto;
+} */
+ .revision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  /* KEY FIX: Allow independent heights */
+  align-items: start; /* ← THIS LINE FIXES THE HEIGHT SYNC ISSUE */
 }
 
 .revision-section {
@@ -123,6 +130,9 @@
   border-radius: 12px;
   padding: 30px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  /* KEY FIX: Each section manages its own height independently */
+  align-self: start; /* ← THIS ENSURES EACH CONTAINER IS INDEPENDENT */
+  width: 100%;
 }
 
 [data-theme="light"] .revision-section {
