@@ -73,6 +73,10 @@ I want users to sign up and login but I dont want a simple sign up and log in I 
 I want like the medium interface when where the user isnt a premium user they cant read the full text something like that
 Yes I know about past papers and exam questions and will work on that when Im done with the backend because its part of the research so it can be later on why I also havent built the content for topics page also design and layout
 Whats on my mind right now before working on the backend would be to reduce how the grid of the topics of the bio page looks as screen size reduces probably have to make it look the way it is until we reach a small screen size
+
+I seriously dont know how Id even begin to get into this backend but gotta hop into it and if anyone reads this one day I have exams this week so wish me luck and Grace to lock in.
+Might ask for advice from others on how they get into backend
+Backend is PHP and MySQL and other techstacks along the way I might need i guess.
 <!-- Next features :
 Content to put in the navbar
 Whether to change the display of the subjects(Done)
