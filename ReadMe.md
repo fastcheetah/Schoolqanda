@@ -66,6 +66,13 @@ Building after exams
 
 > _"Helping students succeed—one question at a time."_ 💙
 Need to find content and questions for the page
+
+Backend Structure 
+What do I want for now with the backend of this project
+I want users to sign up and login but I dont want a simple sign up and log in I want the user to reach to a point then they have to sign up or log in
+I want like the medium interface when where the user isnt a premium user they cant read the full text something like that
+Yes I know about past papers and exam questions and will work on that when Im done with the backend because its part of the research so it can be later on why I also havent built the content for topics page also design and layout
+Whats on my mind right now before working on the backend would be to reduce how the grid of the topics of the bio page looks as screen size reduces probably have to make it look the way it is until we reach a small screen size
 <!-- Next features :
 Content to put in the navbar
 Whether to change the display of the subjects(Done)
