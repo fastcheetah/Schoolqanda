@@ -110,3 +110,5 @@ Wrote an essay by the way Ill drop the link
 I think I want to still work on the way the user gets to what he needs and will shift content I took a break from this project but Im back officially -->
 https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
 Replanning the project
+NEXT THING TO DO 
+Build an authentication system with php and mysql and this might take some time but not much hopefully
