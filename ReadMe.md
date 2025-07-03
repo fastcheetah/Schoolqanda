@@ -106,6 +106,7 @@ WiFi Finished
 
 Been reading for tests coming up soon
 Wrote an essay by the way Ill drop the link
+
+I think I want to still work on the way the user gets to what he needs and will shift content I took a break from this project but Im back officially -->
 https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
 Replanning the project
-I think I want to still work on the way the user gets to what he needs and will shift content I took a break from this project but Im back officially -->
