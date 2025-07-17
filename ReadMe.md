@@ -112,3 +112,6 @@ https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
 Replanning the project
 NEXT THING TO DO 
 Build an authentication system with php and mysql and this might take some time but not much hopefully
+
+Problems
+Ive been trying to fix my xampp I dont know why it wont run
