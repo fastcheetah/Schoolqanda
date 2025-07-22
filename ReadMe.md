@@ -112,3 +112,10 @@ https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
 Replanning the project
 NEXT THING TO DO 
 Build an authentication system with php and mysql and this might take some time but not much hopefully
+
+It took me so long to fix my sql problem 
+mysql_error.log 2025-07-22 0:55:45 0 [ERROR] Can't start server: Bind on TCP/IP port. 
+I was skeptical about changing the port which took some time but I had to.
+Steps
+Open Xampp then MySql gui then config then open the ini file then look for port
+Then highlight it and hit ctrl + h and change all port 3306 to 3307 then go back to xampp then on top right side of xampp and click config then services then click sql and change port to 3307
