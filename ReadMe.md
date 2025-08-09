@@ -1,4 +1,4 @@
-
+WiFi issues 
 
 # 📚 School Q&A Helper
 
@@ -120,4 +120,5 @@ Steps
 Open Xampp then MySql gui then config then open the ini file then look for port
 Then highlight it and hit ctrl + h and change all port 3306 to 3307 then go back to xampp then on top right side of xampp and click config then services then click sql and change port to 3307
 
-//Time to come back to this project with help and a fresh mind
+
+Comeback on this project
