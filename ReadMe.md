@@ -119,3 +119,29 @@ I was skeptical about changing the port which took some time but I had to.
 Steps
 Open Xampp then MySql gui then config then open the ini file then look for port
 Then highlight it and hit ctrl + h and change all port 3306 to 3307 then go back to xampp then on top right side of xampp and click config then services then click sql and change port to 3307
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IT is a term used to associate anything with computers and technology
+Web Development
+Software Engineering 
+Web designigng 
+Game development
+p
+Programming languages
+
+Programming languages
+Hardware
+
+//Time to come back to this project with help and a fresh mind
