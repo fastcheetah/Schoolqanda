@@ -1,4 +1,3 @@
-WiFi issues 
 
 # 📚 School Q&A Helper
 
