@@ -123,3 +123,17 @@ Then highlight it and hit ctrl + h and change all port 3306 to 3307 then go back
 Comeback on this project
 ## Updates
 I’m currently exploring design ideas for the demo page aspect of this project and researching best practices on how a good demo page should look and how to captivate users . My goal is to understand what makes users click, not click out, and join, and working on the design of this.
+
+Gravity System Implementation - Decision Log
+Project Context
+Project: SchoolQandA Demo Website
+Feature Attempted: JavaScript/HTML Canvas Gravity System
+Status: ❌ Not Implemented
+Decision Date: October 15, 2025
+
+What Was Attempted
+The initial plan was to implement an interactive gravity system using JavaScript and HTML Canvas that would:
+
+Provide visual interest to the demo website and would work behind the header text of the website
+Create dynamic, physics-based animations
+Enhance user engagement through interactive elements
