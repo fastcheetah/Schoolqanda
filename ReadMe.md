@@ -137,3 +137,21 @@ The initial plan was to implement an interactive gravity system using JavaScript
 Provide visual interest to the demo website and would work behind the header text of the website
 Create dynamic, physics-based animations
 Enhance user engagement through interactive elements
+
+Why It Was Not Implemented - (worked on this on a local folder on my laptop)
+1. Scope Concerns
+The gravity system proved to be too complex for a demo website. I am not at that level yet and I dont think its something right for this website and it would have shifted my focus alot to learn new concepts
+2. Professionalism Considerations
+For a demo of this website, especially one focused on education :
+
+A buggy or poorly performing animation would detract from credibility
+Core functionality should take precedence over decorative features
+
+Next Steps
+Taking a more professional approach and something within my skill range
+Focus on the core functions and how to get them working
+Simplicity and Focus(because at the back of my mind I want to build a chess game in the website so I gotta focus)
+
+"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupéry
+
+The meaning brings me back on track
