@@ -1,0 +1,23 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-content);
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    height: 100vh;
+}
+.content-s {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--bg-content);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    margin-left: auto;
+    
+
+}
