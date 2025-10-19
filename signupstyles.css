@@ -1,26 +1,254 @@
-body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-content);
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    height: 100vh;
-}
-.content-s {
-    max-width: 400px;
-    margin: auto;
-        padding: 3.5rem 2.5rem;
-    background-color: var(--bg-content);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-right: auto;
-    margin-left: auto;
-    
+/* Complete redesign of signup page styling to match screenshot */
 
-}
 .auth-container {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem 1rem;
+  background-color: var(--bg-content);
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 3rem 2.5rem;
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.signup-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Google Sign Up Button */
+.google-signup-btn {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background-color: #ffffff;
+  color: #202124;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.google-signup-btn:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.google-signup-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #999999;
+  font-size: 0.875rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #444444;
+}
+
+.divider span {
+  padding: 0 1rem;
+}
+
+/* Form Styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.form-group input {
+  padding: 0.875rem 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #999999;
+}
+
+.form-group input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #4285f4;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #999999;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: #ffffff;
+}
+
+/* Primary Sign Up Button */
+.signup-btn-primary {
+  padding: 0.875rem 1rem;
+  background: linear-gradient(135deg, #4285f4 0%, #3367d6 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.signup-btn-primary:hover {
+  background: linear-gradient(135deg, #3367d6 0%, #2851b8 100%);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+  transform: translateY(-2px);
+}
+
+.signup-btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #cccccc;
+  margin-top: 1.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.login-link a {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #5a9cff;
+  text-decoration: underline;
+}
+
+/* Terms Text */
+.terms-text {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999999;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.terms-text a {
+  color: #4285f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms-text a:hover {
+  color: #5a9cff;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .signup-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    min-height: calc(100vh - 150px);
+    padding: 1rem;
+  }
+
+  .signup-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .signup-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .signup-form {
+    gap: 1rem;
+  }
 }
