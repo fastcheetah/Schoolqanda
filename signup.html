@@ -207,6 +207,13 @@
         </div>
     </footer>
 
-
+    <script>
+        document.querySelector('.password-toggle').addEventListener('click', function(e) {
+            e.preventDefault();
+            const passwordInput = document.getElementById('password');
+            const isPassword = passwordInput.type === 'password';
+            passwordInput.type = isPassword ? 'text' : 'password';
+        });
+    </script>
 </body>
 </html>
