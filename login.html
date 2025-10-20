@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signupstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- Desktop Header (displays above 1020px) -->
+        <div class="desktop-header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <!-- <ul>
+                            <li><a href="#" class="nav-dropdown">Start studying <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                            <li><a href="#" class="nav-dropdown">Study tools <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                        </ul> -->
+                    </nav>
+                </div>
+                
+                <!-- <div class="header-search">
+                    <input type="text" placeholder="Search for a subject" class="search-input">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div> -->
+                
+                <div class="header-right">
+                    <a href="#" class="login-btn signup-btn">Sign Up</a>
+                    <!-- <a href="#" class="signup-btn">Join now for free</a> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Header (displays below 1020px) -->
+        <div class="mobile-header">
+            <div class="container">
+                <div class="mobile-header-wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
+                    </div>
+                    
+                    <div class="mobile-actions">
+                        <div class="search-icon-container">
+                            <!-- <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg> -->
+                        </div>
+                        <a href="#" class="login-btn signup-btn">Sign Up</a>
+                        <!-- <a href="#" class="try-free-btn">Join now for free</a> -->
+                        
+                        <button class="mobile-menu-toggle">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                            </svg> -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-container">
+              <div class="mobile-menu-header">
+                    <div class="logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./img/Logo.png" alt="Exam Success Path" class="logo-image dark-logo">
+                            <img src="./img/lightmode-logo.png" alt="Exam Success Path" class="logo-image light-logo">
+                        </a>
+                    </div>
+                    <button class="close-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="#" class="nav-dropdown">Start studying <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                        <li><a href="#" class="nav-dropdown">Study tools <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg></a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-actions">
+                    <a href="#" class="login-btn">Log in</a>
+                    <a href="#" class="signup-btn">Join now for free</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile search overlay -->
+        <div class="mobile-search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for a subject" class="search-input">
+                <button class="close-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hr"></div>
+    </header>
+
+    
+    <div class="auth-container">
+            
+        <div class="signup-card">
+            <h1 class="signup-title">Sign up now. It's free!</h1>
+
+            <button class="google-signup-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                Sign up with Google
+            </button>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+
+            <form action="/signup" method="post" class="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="signup-btn-primary">Sign up</button>
+            </form>
+
+            <p class="login-link">Already have an account? <a href="./login.html">Log in</a></p>
+                <!-- I have no terms and services to agree to -->
+            <!-- <p class="terms-text">By signing up you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p> -->
+        </div>
+    </div>
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Exam Sucess Path</h3>
+                    <p>Your ultimate resource for 11th grade academic support and knowledge sharing.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Subjects</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Theme-dependent logo -->
+                <div class="theme-logo">
+                    <img src="./img/Vector.png" alt="Logo" class="dark-logo">
+                    <img src="./img/Vectordark.png" alt="Logo" class="light-logo">
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@schoolqa.edu</p>
+                    <p>Phone: (123) 456-7890.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SchoolQ&A. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.password-toggle').addEventListener('click', function(e) {
+            e.preventDefault();
+            const passwordInput = document.getElementById('password');
+            const isPassword = passwordInput.type === 'password';
+            passwordInput.type = isPassword ? 'text' : 'password';
+        });
+    </script>
+</body>
+</html>
