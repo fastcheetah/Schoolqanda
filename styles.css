@@ -1130,3 +1130,17 @@ footer {
     display: inline;
   }
 }
+.content-s{
+        font-family: "Plus Jakarta Sans", sans-serif;
+}
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+::-webkit-scrollbar-track{
+    background: #1b1e2a;
+}
+::-webkit-scrollbar-thumb{
+    /* background-color: var(--primary-blue); */
+    background-color: rgb(209,209,209);
+    
+}
