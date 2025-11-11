@@ -155,3 +155,5 @@ Simplicity and Focus(because at the back of my mind I want to build a chess game
 "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupéry
 
 The meaning brings me back on track
+I think my structure is messy need to find a way to structure my code 
+Want ot work on the navbar and create a pull out animation to link to years(Can't quite put it into words yet or text)
