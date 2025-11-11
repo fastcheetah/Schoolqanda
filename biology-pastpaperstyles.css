@@ -1,0 +1,314 @@
+/* Past Exams Page Specific Styles */
+
+/* Wrapper for sidebar + main layout */
+.past-exams-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  position: relative;
+}
+
+/* Sidebar Styles */
+.past-exams-sidebar {
+  width: 128px;
+  background-color: var(--contentcolor);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  /* padding: 40px 0 20px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 50;
+  transition: transform 0.3s ease; */
+}
+
+[data-theme="light"] .past-exams-sidebar {
+  background-color: var(--bg-content);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  gap: 8px;
+}
+
+.sidebar-item:hover {
+  opacity: 0.8;
+}
+
+.sidebar-item.active {
+  color: #60a5fa;
+  background-color: rgba(96, 165, 250, 0.1);
+}
+
+[data-theme="light"] .sidebar-item.active {
+  color: var(--primary-blue);
+  background-color: rgba(26, 115, 232, 0.08);
+}
+
+.sidebar-icon {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-divider {
+  width: 70%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 0;
+}
+
+[data-theme="light"] .sidebar-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Toggle Button for Mobile */
+.sidebar-toggle-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 60;
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar-toggle-btn:hover {
+  opacity: 0.7;
+}
+
+/* Main Content Area */
+.past-exams-main {
+  flex: 1;
+  padding: 60px 40px;
+  background-color: var(--bg-main);
+  overflow-y: auto;
+}
+
+[data-theme="light"] .past-exams-main {
+  background-color: var(--bg-content);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.breadcrumb-link {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="light"] .breadcrumb-link {
+  color: var(--primary-blue);
+}
+
+.breadcrumb-link:hover {
+  opacity: 0.8;
+}
+
+.breadcrumb-separator {
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+.breadcrumb-current {
+  color: var(--text-color);
+}
+
+/* Page Header */
+.past-exams-header {
+  margin-bottom: 50px;
+}
+
+.past-exams-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+[data-theme="light"] .past-exams-header h1 {
+  color: var(--primary-black);
+}
+
+.past-exams-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.9;
+  max-width: 900px;
+}
+
+/* Year Sections */
+.year-section {
+  margin-bottom: 50px;
+}
+
+.year-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="light"] .year-title {
+  color: var(--primary-black);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.exam-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.exam-link {
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+  padding: 8px 0;
+}
+
+[data-theme="light"] .exam-link {
+  color: var(--primary-blue);
+}
+
+.exam-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Load More Button */
+.load-more-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+[data-theme="light"] .load-more-btn {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.load-more-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="light"] .load-more-btn:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .past-exams-sidebar {
+    position: fixed;
+    left: -128px;
+    height: 100vh;
+    z-index: 55;
+    transition: left 0.3s ease;
+  }
+
+  .past-exams-sidebar.active {
+    left: 0;
+  }
+
+  .sidebar-toggle-btn {
+    display: block;
+  }
+
+  .past-exams-main {
+    margin-left: 0;
+    width: 100%;
+    padding: 60px 20px 100px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .past-exams-main {
+    padding: 40px 15px 100px 15px;
+  }
+
+  .past-exams-header h1 {
+    font-size: 2rem;
+  }
+
+  .past-exams-description {
+    font-size: 0.95rem;
+  }
+
+  .exam-links {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-toggle-btn {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .past-exams-main {
+    padding: 20px 10px 100px 10px;
+  }
+
+  .past-exams-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .past-exams-description {
+    font-size: 0.9rem;
+  }
+
+  .year-title {
+    font-size: 1.2rem;
+  }
+
+  .exam-link {
+    font-size: 0.95rem;
+  }
+}
