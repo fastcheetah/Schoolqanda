@@ -1,0 +1,91 @@
+Backend Structure 
+What do I want for now with the backend of this project
+I want users to sign up and login but I dont want a simple sign up and log in I want the user to reach to a point then they have to sign up or log in
+I want like the medium interface when where the user isnt a premium user they cant read the full text something like that
+Yes I know about past papers and exam questions and will work on that when Im done with the backend because its part of the research so it can be later on why I also havent built the content for topics page also design and layout
+Whats on my mind right now before working on the backend would be to reduce how the grid of the topics of the bio page looks as screen size reduces probably have to make it look the way it is until we reach a small screen size
+
+I seriously dont know how Id even begin to get into this backend but gotta hop into it and if anyone reads this one day I have exams this week so wish me luck and Grace to lock in.
+Might ask for advice from others on how they get into backend
+Backend is PHP and MySQL and other techstacks along the way I might need i guess.
+<!-- Next features :
+Content to put in the navbar
+Whether to change the display of the subjects(Done)
+Structure of the subject pages(Done)
+Change color of the subject containers(Done)
+Making an image for the page with figma(Learning how to use figma draw lol still in work)
+Work on the header of the page(Done but will still come back to it)
+Still needs to touch this header because on phones the orientation is bad(Done but needs more touch) 
+Work on header on small devices(Done aspects but need more touch)
+Build layout of subject pages
+Building the subject pages 
+adding the physics and fmaths page(Done)
+
+Taking a break from this project for a while to clear my mind and hopefully in that period think of more features to add 
+
+4th July - Resume date
+
+I want to use this area for documenting and blogging sometimes 
+Just to let people know how I felt even while building a project like this 
+I dont even know why I do this no one might read this so much things  what if it is a big flop all things that secretly talk in my heart but to be honest Im not scared at all just normal life is a mess even tryna work on myself so I can put more time into this and school
+
+Procastination at its finest lol couldnt even make blogs. Ill try working on planning  my dats and weeks for 
+productivity and success. Thank you I want to make this shit
+My WiFi has finished so I have to watch the way I code because my hotspot cant really handle it 
+
+WiFi Finished
+
+Been reading for tests coming up soon
+Wrote an essay by the way Ill drop the link
+
+I think I want to still work on the way the user gets to what he needs and will shift content I took a break from this project but Im back officially -->
+https://drive.google.com/drive/folders/1r7VWm_n-TGvd8Mb0qpQER0P4-MqiRYbJ
+Replanning the project
+NEXT THING TO DO 
+Build an authentication system with php and mysql and this might take some time but not much hopefully
+
+It took me so long to fix my sql problem 
+mysql_error.log 2025-07-22 0:55:45 0 [ERROR] Can't start server: Bind on TCP/IP port. 
+I was skeptical about changing the port which took some time but I had to.
+Steps
+Open Xampp then MySql gui then config then open the ini file then look for port
+Then highlight it and hit ctrl + h and change all port 3306 to 3307 then go back to xampp then on top right side of xampp and click config then services then click sql and change port to 3307
+
+
+Comeback on this project
+## Updates
+I’m currently exploring design ideas for the demo page aspect of this project and researching best practices on how a good demo page should look and how to captivate users . My goal is to understand what makes users click, not click out, and join, and working on the design of this.
+
+Gravity System Implementation - Decision Log
+Project Context
+Project: SchoolQandA Demo Website
+Feature Attempted: JavaScript/HTML Canvas Gravity System
+Status: ❌ Not Implemented
+Decision Date: October 15, 2025
+
+What Was Attempted
+The initial plan was to implement an interactive gravity system using JavaScript and HTML Canvas that would:
+
+Provide visual interest to the demo website and would work behind the header text of the website
+Create dynamic, physics-based animations
+Enhance user engagement through interactive elements
+
+Why It Was Not Implemented - (worked on this on a local folder on my laptop)
+1. Scope Concerns
+The gravity system proved to be too complex for a demo website. I am not at that level yet and I dont think its something right for this website and it would have shifted my focus alot to learn new concepts
+2. Professionalism Considerations
+For a demo of this website, especially one focused on education :
+
+A buggy or poorly performing animation would detract from credibility
+Core functionality should take precedence over decorative features
+
+Next Steps
+Taking a more professional approach and something within my skill range
+Focus on the core functions and how to get them working
+Simplicity and Focus(because at the back of my mind I want to build a chess game in the website so I gotta focus)
+
+"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupéry
+
+The meaning brings me back on track
+I think my structure is messy need to find a way to structure my code 
+Want ot work on the navbar and create a pull out animation to link to years(Can't quite put it into words yet or text)
